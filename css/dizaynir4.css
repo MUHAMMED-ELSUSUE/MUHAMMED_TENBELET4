@@ -105,7 +105,7 @@ input{
 }
 /* tttttttt */
 .sosyal{
-    background-color: var(--min3-background);
+    background-color: black;
     padding: 20px;
 }
 .sosyal .container{
@@ -130,20 +130,11 @@ input{
     display: flex;
     gap: 30px;
 }
-.sosyal .container .social li{
-    border: 1px solid var(--min4-color);
-    padding: 5px;
-    border-radius: 33%;
-    background-color: var(--min4-color);
-}
-.sosyal .container .social li:hover{
-    background-color: var(--min-color);
 
+.sosyal .container .sone .social2 .colo0{
+    position: relative;
+    right: 13px;
 }
-.sosyal .container .social li:hover i {
-    color: white;
-}
-
 .sosyal .container .social2{
     display: flex;
     gap: 45px;
@@ -153,6 +144,14 @@ input{
 }
 .sosyal .container .social2 .color1:hover{
     color: var(--min-color);
+}
+
+.sosyal .container .social li a .icon{
+    color: rgb(255 255 255 / 48%);
+    animation: min-color .5s ease-in-out infinite alternate;
+}
+.sosyal .container .social li:nth-child(2) a .icon{
+    animation-name: min2-color ;
 }
 
 
@@ -589,73 +588,73 @@ header .container .cl-a:hover{
 الا نيميشن 
   */
 .teniger .progress[data-percentage="10"] .progress-right .progress-bar {
-    animation: loading-1 1.5s linear forwards;
+    animation: loading-1 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="10"] .progress-left .progress-bar {
     animation: 0;
 }
 
 .teniger .progress[data-percentage="20"] .progress-right .progress-bar {
-    animation: loading-2 1.5s linear forwards;
+    animation: loading-2 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="20"] .progress-left .progress-bar {
     animation: 0;
 }
 
 .teniger .progress[data-percentage="30"] .progress-right .progress-bar {
-    animation: loading-3 1.5s linear forwards;
+    animation: loading-3 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="30"] .progress-left .progress-bar {
     animation: 0;
 }
 
 .teniger .progress[data-percentage="40"] .progress-right .progress-bar {
-    animation: loading-4 1.5s linear forwards;
+    animation: loading-4 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="40"] .progress-left .progress-bar {
     animation: 0;
 }
 
 .teniger .progress[data-percentage="50"] .progress-right .progress-bar {
-    animation: loading-5 1.5s linear forwards;
+    animation: loading-5 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="50"] .progress-left .progress-bar {
     animation: 0;
 }
 
 .teniger .progress[data-percentage="60"] .progress-right .progress-bar {
-    animation: loading-5 1.5s linear forwards;
+    animation: loading-5 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="60"] .progress-left .progress-bar {
-    animation: loading-1 1.5s linear forwards 1.5s;
+    animation: loading-1 3.5s linear forwards 3.5s;
 }
 
 .teniger .progress[data-percentage="70"] .progress-right .progress-bar {
-    animation: loading-5 1.5s linear forwards;
+    animation: loading-5 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="70"] .progress-left .progress-bar {
-    animation: loading-2 1.5s linear forwards 1.5s;
+    animation: loading-2 3.5s linear forwards 3.5s;
 }
 
 .teniger .progress[data-percentage="80"] .progress-right .progress-bar {
-    animation: loading-5 1.5s linear forwards;
+    animation: loading-5 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="80"] .progress-left .progress-bar {
-    animation: loading-3 1.5s linear forwards 1.5s;
+    animation: loading-3 3.5s linear forwards 3.5s;
 }
 
 .teniger .progress[data-percentage="90"] .progress-right .progress-bar {
-    animation: loading-5 1.5s linear forwards;
+    animation: loading-5 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="90"] .progress-left .progress-bar {
-    animation: loading-4 1.5s linear forwards 1.5s;
+    animation: loading-4 3.5s linear forwards 3.5s;
 }
 
 .teniger .progress[data-percentage="100"] .progress-right .progress-bar {
-    animation: loading-5 1.5s linear forwards;
+    animation: loading-5 3.5s linear forwards;
 }
 .teniger .progress[data-percentage="100"] .progress-left .progress-bar {
-    animation: loading-5 1.5s linear forwards 1.5s;
+    animation: loading-5 3.5s linear forwards 3.5s;
 }
 
 @keyframes loading-1 {
@@ -1125,18 +1124,27 @@ header .container .cl-a:hover{
         display: block;
     }
 }
-.post .container .box1 img{
+.post .container .box1 .suber{
     width: 100%;
     min-width: 100%;
     border-top-left-radius: 23px;
     border-top-right-radius: 23px;
 }
+
 .post .container .box1 {
     background-color: rgb(255, 255, 255);
     height: 100%;
     box-shadow: 0 4px 18px 9px rgb(0 0 0 / 21%);
     border-radius: 23px;
 }
+.post .container .box1 .box-1-bo .span--1 .ben{
+    width: 50px;
+    position: relative;
+    top: 22px;
+    border-radius: 50%;
+}
+    
+
 
 
 
@@ -1187,6 +1195,14 @@ header .container .cl-a:hover{
     border-radius: 20px;
     font-size: 18px;
 }
+@media (max-width:450px){
+    .post .container .box1 .box-1-bo .fas {
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
 .post .container .box1 .box-1-bo .fas:hover {
     color: white;
     background-color: var(--min-color);
@@ -1399,11 +1415,17 @@ header .container .cl-a:hover{
     top: 50px;
     padding: 10px;
     border-radius: 23px;
-    background: white;
+    background: rgba(255, 255, 255, 0);
     border: 1px solid var(--min-color);
     color: var(--min-color);
     font-size: 20px;
     left: -43px;
+    cursor: pointer;
+    z-index: 2;
+}
+.Contact .container .string button:hover{
+    background-color: var(--min-color);
+    color: white;
 }
 @media (max-width:991px){
     .Contact .container .string button{
@@ -1416,10 +1438,7 @@ header .container .cl-a:hover{
         left: 80px;
     }
 }
-.Contact .container .string button:hover{
-    background-color: var(--min-color);
-    color: white;
-}
+
 
 
 /* 88 */
@@ -1436,4 +1455,32 @@ footer .container .copyright{
     line-height: 2.5;
     color: white;
     font-size: 19px;
+}
+
+
+
+
+
+/* kfeame */
+@keyframes min2-color{
+    0%{
+        text-shadow: 1px 1px 20px  #ff006f , 0 5px 20px #d6249f, 0 0 30px #285AEB;
+    }
+    50%{
+        text-shadow: 1px 1px 20px  #ff006f , 0 5px 20px #d6249f, 0 0 30px #285AEB;
+    }
+    100%{
+        text-shadow: -3px -3px  10px #ff1177, 0 5px 5px #d6249f, 0 0 15px #285AEB;
+    }
+}
+@keyframes min-color {
+    0%{
+        text-shadow: 0 0 20px #1275f7, 0 0 30px #1459b3, 0 0 35px #1275f7;
+    }
+    5%{
+        text-shadow: 0 0 15px #1275f7, 0 0 20px #1459b3, 0 0 25px #1275f7;
+    }
+    0%{
+        text-shadow: 0 0 8px #1275f7, 0 0 10px #1459b3, 0 0 15px #1275f7;
+    }
 }
